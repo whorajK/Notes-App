@@ -1,0 +1,85 @@
+/* ROOT AND RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #0a0a10;
+  --white: #f0f0f0;
+  --red: #f44747;
+  --fade: #0d233b;
+}
+
+/* GENERAL STYLES */
+html {
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../resource/Animated\ Shape.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-gap: 1rem;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 100vw;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background: none;
+  border-radius: 0.5em;
+  outline: none;
+  padding: 1rem;
+  transition: all ease 0.3s;
+}
+
+input,
+textarea {
+  color: var(--black);
+}
+
+input,
+button {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+/* UTILITY CLASSES */
+.hide {
+  display: none;
+}
+
+.radius {
+  border-radius: 0.5em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 899px) {
+  body {
+    grid-template-columns: 45% 1fr;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}

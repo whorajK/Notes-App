@@ -1,0 +1,90 @@
+/* NOTES LIST AND PREVIEW SECTION */
+.notes,
+.preview {
+  background-color: var(--white);
+  padding: 0.5rem;
+}
+
+.preview {
+  position: relative;
+}
+
+/* Notes Section */
+.notes--container {
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+}
+
+.add-btn {
+  background: var(--fade);
+  margin-bottom: 1rem;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  overflow: sroll;
+}
+
+.notes-list span {
+  color: var(--fade);
+  text-align: center;
+}
+
+.notes-list--note {
+  background-color: var(--fade);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.note--time {
+  opacity: 0.85;
+  word-wrap: break-word;
+}
+
+.note--body {
+  margin: 1rem 0;
+}
+
+.note--options {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note--options button {
+  padding: 0.1rem;
+}
+
+/* Preview Section */
+.preview--container {
+  display: grid;
+  grid-template-rows: 10% 1fr 3rem;
+  height: 100%;
+}
+
+.preview--container input {
+  font-size: clamp(1.3rem, 3.3vw, 3.3rem);
+}
+
+.preview--container textarea {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.preview--container button {
+  background: var(--red);
+}
+
+#cancel-btn {
+  background: none;
+  color: var(--fade);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  right: 1%;
+  padding: 0.5rem;
+  position: absolute;
+  top: 1%;
+}
+
+#cancel-btn:hover {
+  transform: rotate(90deg);
+}
